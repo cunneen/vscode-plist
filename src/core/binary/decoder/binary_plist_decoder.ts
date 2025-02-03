@@ -276,12 +276,14 @@ function parseAsString(
     : stringBytes.swap16().toString('utf16le');
 }
 
-const CORE_FOUNDATION_ABSOLUTE_TIME_START = 'January 1 2001 GMT' as const;
+// binary plist dates are seconds since midnight, January 1 2001 GMT ,
+//  whereas JS dates are milliseconds since midnight, January 1 1970 GMT .
+const CORE_FOUNDATION_ABSOLUTE_TIME_START = Date.parse(
+  '01 Jan 2001 00:00:00 GMT'
+);
 function parseAsDate(bytes: Buffer, offset: number): Date {
   const cfAbsoluteTime = bytes.readDoubleBE(offset);
-  const date = new Date(CORE_FOUNDATION_ABSOLUTE_TIME_START);
-  date.setSeconds(date.getSeconds() + cfAbsoluteTime);
-  return date;
+  return new Date(CORE_FOUNDATION_ABSOLUTE_TIME_START + cfAbsoluteTime * 1000);
 }
 
 function parseContainerReference(
