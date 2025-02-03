@@ -179,7 +179,7 @@
   },
   "dependencies": {
     "@vscode/codicons": "^0.0.32",
-    "plist": "^3.0.6"
+    "plist": "^3.1.0"
   },
   "description": "Allows viewing and editing files in a plist editor",
   "devDependencies": {
