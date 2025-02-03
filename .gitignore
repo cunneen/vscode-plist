@@ -18,3 +18,9 @@ node_modules
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+#dotenv-vault
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

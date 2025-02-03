@@ -1,6 +1,7 @@
 # vscode-plist
 
-A custom editor for property list files.
+A custom editor for property list files. This is a fork of [Ivan Hernandez's vscode-plist extension][ivhernandez.vscode-plist] for visual studio code.
+
 
 ![Custom Editor](images/editor.png)
 
@@ -45,3 +46,5 @@ plist representation. Editing provisioning profiles is __not__ supported. [macOS
 * Inefficient editor rendering. When changes are made to the webview (e.g. adding an item, expanding
   an item, editing a value, etc) the webview is rerendered in its entirety. This should be optimized
   to edit the DOM in place.
+
+[ivhernandez.vscode-plist]: https://marketplace.visualstudio.com/items?itemName=ivhernandez.vscode-plist "Ivan Hernandez's vscode-plist extension"

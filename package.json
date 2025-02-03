@@ -181,7 +181,7 @@
     "@vscode/codicons": "^0.0.32",
     "plist": "^3.1.0"
   },
-  "description": "Allows viewing and editing files in a plist editor",
+  "description": "Allows viewing and editing files in a plist editor (updated fork of ivhernandez.vscode-plist)",
   "devDependencies": {
     "@types/eslint": "^9.6.1",
     "@types/eslint-scope": "^3.7.7",
@@ -197,6 +197,7 @@
     "@typescript-eslint/parser": "^5.9.1",
     "@vscode/test-electron": "^2.4.1",
     "buffer": "^6.0.3",
+    "commit-and-tag-version": "^12.5.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-node": "^11.1.0",
@@ -231,9 +232,9 @@
   "main": "./dist/extension.js",
   "name": "vscode-plist",
   "preview": true,
-  "publisher": "ivhernandez",
+  "publisher": "MikeCunneen",
   "repository": {
-    "url": "https://github.com/ivanhernandez13/vscode-plist.git",
+    "url": "https://github.com/cunneen/vscode-plist.git",
     "type": "git"
   },
   "scripts": {
@@ -247,6 +248,11 @@
     "package": "webpack --mode production --devtool hidden-source-map",
     "prepare": "npm run compile",
     "pretest": "npm run compile-tests && npm run compile",
+    "publish": "eval $(cat ./.env) && VSCE_PAT=$VSCE_PAT vsce publish",
+    "pull-dotenv": "npx dotenv-vault@latest pull",
+    "push-dotenv": "npx dotenv-vault@latest push",
+    "release": "commit-and-tag-version",
+    "release-dryrun": "npm run release -- --dry-run",
     "test": "node ./out/test/runTest.js",
     "vscode:prepublish": "npm run package",
     "webpack": "webpack",
