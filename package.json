@@ -230,7 +230,7 @@
   ],
   "license": "MIT",
   "main": "./dist/extension.js",
-  "name": "vscode-plist",
+  "name": "cunneen-vscode-plist",
   "preview": true,
   "publisher": "MikeCunneen",
   "repository": {
@@ -248,7 +248,7 @@
     "package": "webpack --mode production --devtool hidden-source-map",
     "prepare": "npm run compile",
     "pretest": "npm run compile-tests && npm run compile",
-    "publish": "eval $(cat ./.env) && VSCE_PAT=$VSCE_PAT vsce publish",
+    "publish": "source ./.env && VSCE_PAT=$VSCE_PAT vsce publish",
     "pull-dotenv": "npx dotenv-vault@latest pull",
     "push-dotenv": "npx dotenv-vault@latest push",
     "release": "commit-and-tag-version",
