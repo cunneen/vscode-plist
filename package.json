@@ -11,7 +11,7 @@
   },
   "browser": "./dist/extension-web.js",
   "bugs": {
-    "url": "https://github.com/ivanherandez13/vscode-plist/issues"
+    "url": "https://github.com/ivanhernandez13/vscode-plist/issues"
   },
   "capabilities": {
     "untrustedWorkspaces": {
