@@ -213,7 +213,7 @@
     "webpack": "^5.66.0",
     "webpack-cli": "^5.0.1"
   },
-  "displayName": "Property List Editor",
+  "displayName": "Property List Editor (Updated)",
   "engines": {
     "node": ">=18.0.0",
     "vscode": "^1.96.4"
