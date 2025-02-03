@@ -186,13 +186,13 @@ describe('Plist Webview Controller', () => {
     });
     const key = memento.oneAndOnlyKey;
     if (!expectToBeDefined(key)) return;
-    expect(memento.get(key)).toEqual({first: 30});
+    expect(memento.get(key)).toEqual({first: '30'});
 
     webview.postWebviewMessage({
       command: 'webviewStateChanged',
       payload: {key: 'columnWidths', newValue: {second: '15'}},
     });
-    expect(memento.get(key)).toEqual({second: 15});
+    expect(memento.get(key)).toEqual({second: '15'});
 
     webview.postWebviewMessage({
       command: 'webviewStateChanged',

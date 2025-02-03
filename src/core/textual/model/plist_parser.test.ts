@@ -59,7 +59,7 @@ describe('Plist Parser', () => {
     expect(actual).toEqual(expected);
   });
 
-  const FAKE_DATE = new Date('1995-07-30T03:24:00');
+  const FAKE_DATE = new Date('1995-07-30T03:24:00-04:00');
   it('date', () => {
     const actual = parseObjectAndReturnRootChildren({dateKey: FAKE_DATE});
     const expected: PlistEntry[] = [
