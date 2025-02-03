@@ -1,6 +1,6 @@
 import {CancellationToken} from 'vscode';
 import {checkOutput} from './child_process';
-import {quoted} from '../string';
+import {dblQuoted, quoted} from '../string';
 
 async function convert(
   input: string,
@@ -23,7 +23,7 @@ async function convert(
   const args = [
     format === 'json' ? format : format === 'plist' ? 'xml1' : 'binary1',
     '-r',
-    input,
+    dblQuoted(input),
     '-o',
     quoted(output),
   ];
