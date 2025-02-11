@@ -256,7 +256,7 @@
     "test": "node ./out/test/runTest.js",
     "vscode:prepublish": "npm run package",
     "webpack": "webpack",
-    "watch": "npm run compile --watch",
+    "watch": "npm run compile -- --watch",
     "watch-ui": "npm run compile-ui --watch",
     "watch-web": "npm run compile-web --watch",
     "watch-tests": "tsc -p . -w --outDir out"
