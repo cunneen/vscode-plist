@@ -10,6 +10,31 @@ All notable changes to this project will be documented in this file. See [commit
 * :bug: tabInputPredicate error ([1de781f](https://github.com/cunneen/vscode-plist/commit/1de781fc27a9c33a6ecbd128ad0fd3eec674a306))
 * :hammer: `npm run watch` exiting prematurely ([b1c7674](https://github.com/cunneen/vscode-plist/commit/b1c7674b51abfa44c4f7ebf0b40ad5c3bae94d6f))
 
+
+### Documentation
+
+* :memo: readme: use smaller icon ([eaed7b2](https://github.com/cunneen/vscode-plist/commit/eaed7b2e9863a2416de8db30123266e0116b85c1))
+* :memo: Tidy up readme ([0a7153a](https://github.com/cunneen/vscode-plist/commit/0a7153a474d24d3d9b1a0bb73fa124c749d41643))
+* :memo: update icon ([3e2b03b](https://github.com/cunneen/vscode-plist/commit/3e2b03b2caaba18bc5c2c69646138071a979a666))
+
+
+### Miscellaneous Chores
+
+* :bookmark: prepare fork for vscode marketplace publish ([d4dff7d](https://github.com/cunneen/vscode-plist/commit/d4dff7dbc5975a0c8b7324d5df0357f325bb1b0d))
+* :bookmark: prepare fork for vscode marketplace publish ([51edbc4](https://github.com/cunneen/vscode-plist/commit/51edbc4713f17fdb5062d2baa0687887e4027a94))
+* :bookmark: re-tag v0.1.8 ; add .versionrc.json ([901d928](https://github.com/cunneen/vscode-plist/commit/901d928f14d44f3b7cf225656804152c296813a8))
+* 🚨 package.json : npm pkg fix ([e3864d3](https://github.com/cunneen/vscode-plist/commit/e3864d323865ba60896153bc4fd06e34d4a02f6b))
+* 🚨 package.json : private: true ([4350d88](https://github.com/cunneen/vscode-plist/commit/4350d882f54009f8c3c0cbce80d834a66197406c))
+* **release:** 0.1.8 ([8fdb832](https://github.com/cunneen/vscode-plist/commit/8fdb8327ade4c0e55f0b0031070e548f4f12308e))
+
+## [0.1.8](https://github.com/cunneen/vscode-plist/compare/v0.1.7...v0.1.8) (2025-02-11)
+
+
+### Bug Fixes
+
+* :bug: tabInputPredicate error ([1de781f](https://github.com/cunneen/vscode-plist/commit/1de781fc27a9c33a6ecbd128ad0fd3eec674a306))
+* :hammer: `npm run watch` exiting prematurely ([b1c7674](https://github.com/cunneen/vscode-plist/commit/b1c7674b51abfa44c4f7ebf0b40ad5c3bae94d6f))
+
 ## [0.1.7](https://github.com/cunneen/vscode-plist/compare/v0.1.6...v0.1.7) (2025-02-03)
 
 ## 0.1.6 (2025-02-03)
