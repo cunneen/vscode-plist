@@ -232,6 +232,7 @@
   "main": "./dist/extension.js",
   "name": "cunneen-vscode-plist",
   "preview": true,
+  "private": true,
   "publisher": "MikeCunneen",
   "repository": {
     "url": "git+https://github.com/cunneen/vscode-plist.git",
