@@ -60,7 +60,7 @@ See [Changelog]
 
 <!-- IMAGES -->
 
-[icon]:icon.png "icon"
+[icon]:./ui/resources/icons/icon.png "icon"
 [Custom Editor]:images/editor.png "Custom Editor"
 [View as plain text]:images/plain_text.png "View as plain text"
 [Collapse or Expand all]:images/collapse_expand_all.png "Collapse or Expand all"
