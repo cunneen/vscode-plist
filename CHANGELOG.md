@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.8](https://github.com/cunneen/vscode-plist/compare/v0.1.7...v0.1.8) (2025-02-11)
+
+
+### Bug Fixes
+
+* :bug: tabInputPredicate error ([1de781f](https://github.com/cunneen/vscode-plist/commit/1de781fc27a9c33a6ecbd128ad0fd3eec674a306))
+* :hammer: `npm run watch` exiting prematurely ([b1c7674](https://github.com/cunneen/vscode-plist/commit/b1c7674b51abfa44c4f7ebf0b40ad5c3bae94d6f))
+
 ## [0.1.7](https://github.com/cunneen/vscode-plist/compare/v0.1.6...v0.1.7) (2025-02-03)
 
 ## 0.1.6 (2025-02-03)
