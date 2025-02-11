@@ -41,7 +41,7 @@ function tabInputPredicate(
   if (predicate.uri) {
     const input = tab.input as {uri?: vscode.Uri};
     const uris = Array.isArray(predicate.uri) ? predicate.uri : [predicate.uri];
-    if (!uris.some(uri => input.uri?.path === uri.path)) {
+    if (!uris.some(uri => input?.uri?.path === uri.path)) {
       return false;
     }
   }
