@@ -234,7 +234,7 @@
   "preview": true,
   "publisher": "MikeCunneen",
   "repository": {
-    "url": "https://github.com/cunneen/vscode-plist.git",
+    "url": "git+https://github.com/cunneen/vscode-plist.git",
     "type": "git"
   },
   "scripts": {
