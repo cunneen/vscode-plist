@@ -21,6 +21,9 @@ node_modules
 
 #dotenv-vault
 .env*
+.env.keys
 .flaskenv*
 !.env.project
 !.env.vault
+!.env.example
+!.env
