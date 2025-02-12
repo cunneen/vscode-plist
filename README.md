@@ -1,8 +1,10 @@
-# ![icon] vscode-plist
+# ![icon](ui/resources/icons/icon.png "icon") vscode-plist
+
+---
 
 A custom editor for property list files. This is a fork of [Ivan Hernandez's vscode-plist extension][ivhernandez.vscode-plist] for visual studio code.
 
-![Custom Editor]
+![Custom Editor](images/editor.png "Custom Editor")
 
 ## Features
 
@@ -11,13 +13,13 @@ A custom editor for property list files. This is a fork of [Ivan Hernandez's vsc
 The contents of a plist can be expanded or collapsed in its entirety with commands via the context
 menu (i.e. right click menu).
 
-![Collapse or Expand all]
+![Collapse or Expand all](images/collapse_expand_all.png "Collapse or Expand all")
 
 #### Switching to plain text
 
 Description
 
-![View as plain text]
+![View as plain text](images/plain_text.png "View as plain text")
 
 #### Binary Plists
 
@@ -59,11 +61,12 @@ See [Changelog]
 [Changelog]: ./CHANGELOG.md
 
 <!-- IMAGES -->
-
-[icon]:./ui/resources/icons/icon.png "icon"
-[Custom Editor]:images/editor.png "Custom Editor"
-[View as plain text]:images/plain_text.png "View as plain text"
-[Collapse or Expand all]:images/collapse_expand_all.png "Collapse or Expand all"
+  <!-- Note: the @vscode/vsce tool, which we use to publish the extension, 
+    will throw errors with "Invalid image source in README.md" if 
+    Reference-style image syntax is used.
+    Therefore we must use the ![]() inline image syntax, so this "IMAGES" 
+    section should remain empty.
+  ****-->
 
 <!-- STYLES -->
 <!--
@@ -77,21 +80,27 @@ Note: GitHub will ignore the <style> element and will render its contents,
 <summary>
 <!-- GH logo -->
 <img
-  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-  width="30" alt="github logo"
+  src="./ui/resources/icons/github-mark.png"
+  width="30" alt="github logo" title="github logo"
 />
 </summary>
 
-> GitHub renders the following CSS as gibberish, while other Markdown viewers will apply the CSS styles.
+> GitHub renders the following CSS in the source Markdown as gibberish, while other Markdown viewers will apply the CSS styles.
 
 <style type="text/css">
   img[title~="icon"] {
-   float: left;
-   width: 128px;
-   max-width: 25%;
-   margin: 1em;
-   vertical-align: middle;
+    float: left;
+    width: 128px;
+    max-width: 25%;
+    margin: 1em;
+    vertical-align: middle;
   }
-
+  img[title="github logo"] {
+    border:1px solid red;
+    float: left;
+    margin: 1em;
+    vertical-align: middle;
+  }
 </style>
+
 </details>
