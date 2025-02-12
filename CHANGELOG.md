@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.9](https://github.com/cunneen/vscode-plist/compare/v0.1.8...v0.1.9) (2025-02-12)
+
+
+### Reverts
+
+* Revert "chore: 🚨 package.json : npm pkg fix" ([060f831](https://github.com/cunneen/vscode-plist/commit/060f831623a3f1d5098e62f6112b599a93771734))
+
+
+### Documentation
+
+* :memo: readme: fix vsce markdown complaints ([a6142fc](https://github.com/cunneen/vscode-plist/commit/a6142fcbb6ad1c2001c56428f80c1ba87c40c157))
+* :memo: readme: use better smaller icon ([416ac8a](https://github.com/cunneen/vscode-plist/commit/416ac8a2b6d65ff4cc610f909bf9d680415dea07))
+* :memo: readme: use smaller icon ([6bdb149](https://github.com/cunneen/vscode-plist/commit/6bdb149ccf0654866e0d628037f38c162403f9b7))
+
+
+### Miscellaneous Chores
+
+* :arrow_up: use "npx @vscode/vsce" ([0d8fc93](https://github.com/cunneen/vscode-plist/commit/0d8fc93a504dad70b5874bace3c97d1b1069fdb7))
+* :rotating_light: add README.md to .eslintignore ([4b3febf](https://github.com/cunneen/vscode-plist/commit/4b3febf5186e21f3592f962d28a51724061ea74c))
+* :rotating_light: README.md: fix markdownlint issues ([23ea126](https://github.com/cunneen/vscode-plist/commit/23ea12699dc8673d0633ceb5306ef3c022ed2334))
+* 🚨 add .markdownlint.json ([d304cf8](https://github.com/cunneen/vscode-plist/commit/d304cf8eb981e16e5add82c5e21ba648835adba6))
+
 ## [0.1.8](https://github.com/cunneen/vscode-plist/compare/v0.1.7...v0.1.8) (2025-02-11)
 
 
