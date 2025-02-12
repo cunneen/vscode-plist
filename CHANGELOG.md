@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.10](https://github.com/cunneen/vscode-plist/compare/v0.1.9...v0.1.10) (2025-02-12)
+
+
+### Miscellaneous Chores
+
+* :bookmark: vscode marketplace : "preview" label removed ([f822462](https://github.com/cunneen/vscode-plist/commit/f82246256175b7ae303d27ac441e48941296941c))
+
+
+### Build System
+
+* :closed_lock_with_key: dotenv-vault => dotenvx ([d3f7f0b](https://github.com/cunneen/vscode-plist/commit/d3f7f0b56a536d41c209ea779521aca1226274eb))
+
+
+### Continuous Integration
+
+* :construction_worker: create GH release upon tag push ([636185c](https://github.com/cunneen/vscode-plist/commit/636185ccc3b253ab9373e5b5f1e4d6c950e70a28))
+
 ## [0.1.9](https://github.com/cunneen/vscode-plist/compare/v0.1.8...v0.1.9) (2025-02-12)
 
 
