@@ -8,20 +8,20 @@ A custom editor for property list files. This is a fork of [Ivan Hernandez's vsc
 
 ## Features
 
-#### Collapse/Expand All
+### Collapse/Expand All
 
 The contents of a plist can be expanded or collapsed in its entirety with commands via the context
 menu (i.e. right click menu).
 
 ![Collapse or Expand all](images/collapse_expand_all.png "Collapse or Expand all")
 
-#### Switching to plain text
+### Switching to plain text
 
 Description
 
 ![View as plain text](images/plain_text.png "View as plain text")
 
-#### Binary Plists
+### Binary Plists
 
 This extension can __view__ and __edit__ binary plists by converting the binary plist into its XML
 representation. This XML version is a separate file in a temporary directory. The temporary file
@@ -29,7 +29,7 @@ is watched for changes and any changes are automatically saved back to the binar
 
 <!-- ![view and edit binary plists](images/binary_plist.png) -->
 
-#### Other supported file types
+### Other supported file types
 
 This extension can  __view__ and __edit__ entitlements files (i.e. .entitlements) which are simply
 property list files with a different file extension.
@@ -96,7 +96,6 @@ Note: GitHub will ignore the <style> element and will render its contents,
     vertical-align: middle;
   }
   img[title="github logo"] {
-    border:1px solid red;
     float: left;
     margin: 1em;
     vertical-align: middle;
