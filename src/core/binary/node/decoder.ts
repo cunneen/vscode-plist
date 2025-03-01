@@ -4,6 +4,8 @@ import * as plist from 'plist';
 import {decodeBinaryPlist} from '../decoder/binary_plist_decoder';
 import {plutil} from '../../../common/utilities/node/plutil';
 import {BinaryPlistDocument} from '../binary_plist_document';
+// eslint-disable-next-line node/no-extraneous-import
+import {CreateOptions} from 'xmlbuilder';
 
 export async function generateTextualPlist(
   document: BinaryPlistDocument,
@@ -21,7 +23,16 @@ export async function generateTextualPlist(
     );
   } else {
     const content = await decodeBinaryPlist(document.uri);
-    const plistContent = plist.build(content as plist.PlistValue);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    const plistContent = plist.build(content as plist.PlistValue, {}, {
+      invalidCharReplacement: '�',
+    } as CreateOptions);
+    if (plistContent.indexOf('�') !== -1) {
+      vscode.window.showWarningMessage(
+        'This file contains “�” characters, likely due to control characters in strings. If you save the file, these replacement characters will remain.'
+      );
+    }
     await vscode.workspace.fs.writeFile(
       document.generatedUri,
       new Uint8Array(Buffer.from(plistContent))
