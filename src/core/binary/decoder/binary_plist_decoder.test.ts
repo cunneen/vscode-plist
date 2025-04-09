@@ -87,4 +87,19 @@ describe('Binary Plist Decoder', () => {
       string: 0,
     });
   });
+
+  it('decodes a bigint plist', () => {
+    const obj = decodeBinaryPlistImpl(inputs.BIGINT_PLIST) as PlistObject;
+    const actual = countInstancesOfTypes(obj);
+    expect(actual).toEqual({
+      string: 3,
+      number: 0,
+      boolean: 0,
+      date: 0,
+      buffer: 0,
+      object: 0,
+      array: 0,
+      other: 0,
+    });
+  });
 });

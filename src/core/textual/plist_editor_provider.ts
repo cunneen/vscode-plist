@@ -110,19 +110,30 @@ export class PlistEditorProvider
       ),
       vscode.commands.registerCommand(
         MANIFEST.commands.openWithDefaultEditor,
-        resource =>
-          replaceTab(resource, {
+        resource => {
+          const activeTab = vscode.window.tabGroups.activeTabGroup.activeTab;
+          if (activeTab && activeTab.input) {
+            resource = (activeTab.input as unknown as {uri: vscode.Uri}).uri;
+          }
+
+          return replaceTab(resource, {
             uri: resource,
             viewType: 'default',
-          })
+          });
+        }
       ),
       vscode.commands.registerCommand(
         MANIFEST.commands.openWithPlistEditor,
-        resource =>
-          replaceTab(resource, {
+        resource => {
+          if (!resource && vscode.window.activeTextEditor) {
+            resource = vscode.window.activeTextEditor.document.uri;
+          }
+
+          return replaceTab(resource, {
             uri: resource,
             viewType: MANIFEST.customEditors.plistEditor,
-          })
+          });
+        }
       ),
       vscode.commands.registerCommand(MANIFEST.commands.collapseAll, () =>
         this.postCommandToActiveWebview('collapseAll')
