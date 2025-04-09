@@ -20,8 +20,8 @@ export async function generateTextualPlist(
 }
 
 export async function exportTextualPlist(
-  sourceUri: vscode.Uri,
-  destUri: vscode.Uri
+  sourcePath: string,
+  destPath: string
 ): Promise<string> {
   return '';
 }
