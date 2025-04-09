@@ -30,7 +30,7 @@ export async function generateTextualPlist(
     } as CreateOptions);
     if (plistContent.indexOf('�') !== -1) {
       vscode.window.showWarningMessage(
-        'This file contains “�” characters, likely due to control characters in strings. If you save the file, these replacement characters will remain.'
+        'The “�” symbol appears in this editor, possibly due to control characters in the original file. If you save it now, those symbols will be saved too.'
       );
     }
     await vscode.workspace.fs.writeFile(
