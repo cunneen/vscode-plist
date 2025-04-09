@@ -69,7 +69,11 @@ export class BinaryPlistEditorProvider
         );
         return;
       }
-      this.tracker.generatedFiles.set(document.generatedUri, document.uri);
+
+      this.tracker.generatedFiles.set(
+        document.generatedUri.fsPath,
+        document.uri
+      );
     }
 
     setTimeout(async () => {
@@ -92,12 +96,12 @@ export class BinaryPlistEditorProvider
     ];
     if (isLocalMacOS()) {
       registrations.push(
-        vscode.workspace.onDidSaveTextDocument(asciiDoc => {
+        vscode.workspace.onDidSaveTextDocument(xmlDoc => {
           if (!BinaryPlistEditorProvider.usingMacosDecoder) return;
 
-          const uri = this.tracker.generatedFiles.get(asciiDoc.uri);
+          const uri = this.tracker.generatedFiles.get(xmlDoc.uri.fsPath);
           if (uri) {
-            exportTextualPlist(asciiDoc.uri, uri);
+            exportTextualPlist(xmlDoc.uri.fsPath, uri.fsPath);
           }
         })
       );

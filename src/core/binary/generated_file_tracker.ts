@@ -1,9 +1,9 @@
 import * as vscode from 'vscode';
 
 export class GeneratedFileTracker {
-  readonly generatedFiles = new Map<vscode.Uri, vscode.Uri>();
+  readonly generatedFiles = new Map<string, vscode.Uri>();
 
   isGenerated(uri: vscode.Uri): boolean {
-    return this.generatedFiles.has(uri);
+    return this.generatedFiles.has(uri.fsPath);
   }
 }
