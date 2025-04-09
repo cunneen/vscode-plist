@@ -54,7 +54,7 @@ export class BinaryPlistEditorProvider
   ): Promise<void> {
     if (document.generatedUri) {
       try {
-        webviewPanel.webview.html = `Generating readable plist from file://${document.uri}...`;
+        webviewPanel.webview.html = `Generating readable plist from ${document.uri}...`;
         await generateTextualPlist(
           document,
           token,
