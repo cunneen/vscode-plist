@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.1](https://github.com/cunneen/vscode-plist/compare/v1.0.0...v1.0.1) (2025-04-09)
+
+
+### Bug Fixes
+
+* :bug: compile error due to [#5](https://github.com/cunneen/vscode-plist/issues/5) ([44ff3c6](https://github.com/cunneen/vscode-plist/commit/44ff3c6aade2a44806b9697e9fbca3d26fbba8e0))
+
 ## [1.0.0](https://github.com/cunneen/vscode-plist/compare/v0.1.11...v1.0.0) (2025-04-09)
 
 ## [0.1.11](https://github.com/cunneen/vscode-plist/compare/v0.1.10...v0.1.11) (2025-04-09)
