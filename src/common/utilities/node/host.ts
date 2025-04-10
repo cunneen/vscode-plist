@@ -1,5 +1,8 @@
 import * as os from 'os';
+import {isLocalWorkspace} from '../vscode';
 
-export function isMacOS(): boolean {
-  return os.platform() === 'darwin';
+const isMacOS = os.platform() === 'darwin';
+
+export function isLocalMacOS(): boolean {
+  return isMacOS && isLocalWorkspace();
 }
