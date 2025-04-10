@@ -704,5 +704,6 @@
       "type": "text",
       "multiline": true
     }
-  ]
+  ],
+  "githubPullRequests.remotes": ["origin"]
 }

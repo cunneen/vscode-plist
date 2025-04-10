@@ -1,6 +1,6 @@
 /**
  * The layout of a binary plist along with their meaning is document at:
- * https://opensource.apple.com/source/CF/CF-1153.18/CFBinaryPList.c.auto.html
+ * https://github.com/opensource-apple/CF/blob/master/CFBinaryPList.c
  *
  * HEADER
  *  bytes - [0, 8]
@@ -144,9 +144,14 @@ function parseObjectTable(
   switch (markerType) {
     case BinaryPlistMarker.Int: {
       const byteLength = Math.pow(2, markerFill);
-      return byteLength === 8
-        ? Number(bytes.readBigInt64BE(nextOffset))
-        : bytes.readIntBE(nextOffset, byteLength);
+      switch (byteLength) {
+        case 8:
+          return Number(bytes.readInt32BE(nextOffset));
+        case 16:
+          return BigInt(bytes.readBigUInt64BE(nextOffset));
+        default:
+          return bytes.readUIntBE(nextOffset, byteLength);
+      }
     }
 
     case BinaryPlistMarker.Real: {

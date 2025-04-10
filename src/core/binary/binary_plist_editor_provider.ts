@@ -55,7 +55,7 @@ export class BinaryPlistEditorProvider
   ): Promise<void> {
     if (document.generatedUri) {
       try {
-        webviewPanel.webview.html = `Generating readable plist from file://${document.uri}...`;
+        webviewPanel.webview.html = `Generating readable plist from ${document.uri}...`;
         await generateTextualPlist(
           document,
           token,
@@ -71,7 +71,11 @@ export class BinaryPlistEditorProvider
         );
         return;
       }
-      this.tracker.generatedFiles.set(document.generatedUri, document.uri);
+
+      this.tracker.generatedFiles.set(
+        document.generatedUri.fsPath,
+        document.uri
+      );
     }
 
     setTimeout(async () => {
@@ -94,12 +98,12 @@ export class BinaryPlistEditorProvider
     ];
     if (isMacOS()) {
       registrations.push(
-        vscode.workspace.onDidSaveTextDocument(asciiDoc => {
+        vscode.workspace.onDidSaveTextDocument(xmlDoc => {
           if (!BinaryPlistEditorProvider.usingMacosDecoder) return;
 
-          const uri = this.tracker.generatedFiles.get(asciiDoc.uri);
+          const uri = this.tracker.generatedFiles.get(xmlDoc.uri.fsPath);
           if (uri) {
-            exportTextualPlist(asciiDoc.uri, uri);
+            exportTextualPlist(xmlDoc.uri.fsPath, uri.fsPath);
           }
         })
       );

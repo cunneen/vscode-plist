@@ -2,6 +2,45 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.2](https://github.com/cunneen/vscode-plist/compare/v1.0.1...v1.0.2) (2025-04-10)
+
+
+### Bug Fixes
+
+* :rotating_light: Add type declaration to remove linter warnings ([b0ea87e](https://github.com/cunneen/vscode-plist/commit/b0ea87e8aecfa1c85aa235fb519291fd382361d7)), closes [#8](https://github.com/cunneen/vscode-plist/issues/8)
+* invalid string characters ([#8](https://github.com/cunneen/vscode-plist/issues/8)) ([@dnicolson](https://github.com/dnicolson)) ([ea8c167](https://github.com/cunneen/vscode-plist/commit/ea8c167594bc65de48c429e9430672766e8f3af9))
+
+
+### Miscellaneous Chores
+
+* :bulb: add TODO comments linking to github issues ([be9471c](https://github.com/cunneen/vscode-plist/commit/be9471c84a443d52f8207b5c55812da4aeec4ade))
+* :wrench: .vscode/settings : GH extension: remove 'upstream' from issues ([2b6c90e](https://github.com/cunneen/vscode-plist/commit/2b6c90e41e4e05fb7edaf508362e994f9c8dfb48))
+
+## [1.0.1](https://github.com/cunneen/vscode-plist/compare/v1.0.0...v1.0.1) (2025-04-09)
+
+
+### Bug Fixes
+
+* :bug: compile error due to [#5](https://github.com/cunneen/vscode-plist/issues/5) ([44ff3c6](https://github.com/cunneen/vscode-plist/commit/44ff3c6aade2a44806b9697e9fbca3d26fbba8e0))
+
+## [1.0.0](https://github.com/cunneen/vscode-plist/compare/v0.1.11...v1.0.0) (2025-04-09)
+
+## [0.1.11](https://github.com/cunneen/vscode-plist/compare/v0.1.10...v0.1.11) (2025-04-09)
+
+
+### Bug Fixes
+
+* bigint support ([#3](https://github.com/cunneen/vscode-plist/issues/3)) (Thanks [@dnicolson](https://github.com/dnicolson)) ([fe65b84](https://github.com/cunneen/vscode-plist/commit/fe65b84999d242068d88318aabfe860537c6a30a))
+* object comparison in sets ([#5](https://github.com/cunneen/vscode-plist/issues/5)) ([@dnicolson](https://github.com/dnicolson)) ([3399dda](https://github.com/cunneen/vscode-plist/commit/3399dda0776f076ba43051b32c4960c3fc061dba))
+* Open with Plist Editor ([#7](https://github.com/cunneen/vscode-plist/issues/7)) ([@dnicolson](https://github.com/dnicolson)) ([6dd6761](https://github.com/cunneen/vscode-plist/commit/6dd676144d53d244815bcf969e08cbe7b1b57367))
+* remove superfluous protocol ([#4](https://github.com/cunneen/vscode-plist/issues/4)) ([@dnicolson](https://github.com/dnicolson)) ([9b26469](https://github.com/cunneen/vscode-plist/commit/9b26469c28a386365356cf170b537ff87a8e8cf2))
+
+
+### Styles
+
+* :rotating_light: add commitlint
+* :rotating_light: commitlint: fix templates ([dae8b27](https://github.com/cunneen/vscode-plist/commit/dae8b27c5397ba9973f8b3c725f2df1a9377caf9))
+
 ## [0.1.10](https://github.com/cunneen/vscode-plist/compare/v0.1.9...v0.1.10) (2025-02-12)
 
 
