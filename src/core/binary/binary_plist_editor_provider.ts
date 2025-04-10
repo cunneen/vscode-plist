@@ -6,7 +6,7 @@ import {replaceTab} from '../../common/utilities/tab';
 import {generatedFileUri} from '../../common/generated_files';
 import {isBinaryPlist} from './decoder/binary_plist_decoder';
 import {getConfiguration, UriUtils} from '../../common/utilities/vscode';
-import {isMacOS} from '../../common/utilities/host';
+import {isLocalMacOS} from '../../common/utilities/host';
 import {generateTextualPlist, exportTextualPlist} from './decoder';
 import {BinaryPlistDocument} from './binary_plist_document';
 import {MANIFEST} from '../manifest';
@@ -26,7 +26,7 @@ export class BinaryPlistEditorProvider
 {
   static get usingMacosDecoder(): boolean {
     return (
-      isMacOS() &&
+      isLocalMacOS() &&
       getConfiguration('plist.binarySupport.decoder', 'plutil') === 'plutil'
     );
   }
@@ -36,7 +36,6 @@ export class BinaryPlistEditorProvider
     private readonly tracker: GeneratedFileTracker
   ) {
     super();
-
     this.disposables.push(...this.performRegistrations());
   }
 
@@ -59,8 +58,7 @@ export class BinaryPlistEditorProvider
         await generateTextualPlist(
           document,
           token,
-          BinaryPlistEditorProvider.usingMacosDecoder &&
-            this.storageLocation.scheme === 'vscode-userdata:'
+          BinaryPlistEditorProvider.usingMacosDecoder
         );
         webviewPanel.webview.html = `Readable plist was generated at ${document.generatedUri}.`;
       } catch (err) {
@@ -96,7 +94,7 @@ export class BinaryPlistEditorProvider
         this
       ),
     ];
-    if (isMacOS()) {
+    if (isLocalMacOS()) {
       registrations.push(
         vscode.workspace.onDidSaveTextDocument(xmlDoc => {
           if (!BinaryPlistEditorProvider.usingMacosDecoder) return;
