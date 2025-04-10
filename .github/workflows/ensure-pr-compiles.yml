@@ -31,4 +31,7 @@ jobs:
     - run: npm run compile-web --if-present
     - run: npm run compile --if-present
     - run: npm run compile-tests --if-present
+    - run: xvfb-run -a npm test
+      if: runner.os == 'Linux'
     - run: npm test
+      if: runner.os != 'Linux'
