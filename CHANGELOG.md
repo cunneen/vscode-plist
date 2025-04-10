@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.3](https://github.com/cunneen/vscode-plist/compare/v1.0.2...v1.0.3) (2025-04-10)
+
+
+### Bug Fixes
+
+* enable editing of binary files ([#6](https://github.com/cunneen/vscode-plist/issues/6)) ([@dnicolson](https://github.com/dnicolson)) ([1791ef2](https://github.com/cunneen/vscode-plist/commit/1791ef246bcee527080b86744927fb6fb0cafba3))
+
 ## [1.0.2](https://github.com/cunneen/vscode-plist/compare/v1.0.1...v1.0.2) (2025-04-10)
 
 
