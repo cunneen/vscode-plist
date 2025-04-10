@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.4](https://github.com/cunneen/vscode-plist/compare/v1.0.2...v1.0.4) (2025-04-10)
+
+
+### Bug Fixes
+
+* enable editing of binary files ([#6](https://github.com/cunneen/vscode-plist/issues/6)) ([@dnicolson](https://github.com/dnicolson)) ([1791ef2](https://github.com/cunneen/vscode-plist/commit/1791ef246bcee527080b86744927fb6fb0cafba3))
+* enable editing of binary files ([#6](https://github.com/cunneen/vscode-plist/issues/6)) ([@dnicolson](https://github.com/dnicolson)) ([#13](https://github.com/cunneen/vscode-plist/issues/13)) ([feb3a85](https://github.com/cunneen/vscode-plist/commit/feb3a85f0fa7df771535c9ae987398e00dd3aa9a))
+
+
+### Reverts
+
+* Revert "fix: enable editing of binary files (#6) (@dnicolson)" (#11) ([0a2f697](https://github.com/cunneen/vscode-plist/commit/0a2f6973bef862e7e12296297fad61d350786eed)), closes [#6](https://github.com/cunneen/vscode-plist/issues/6) [#11](https://github.com/cunneen/vscode-plist/issues/11)
+
+
+### Miscellaneous Chores
+
+* **release:** 1.0.3 ([688a614](https://github.com/cunneen/vscode-plist/commit/688a6142ed954b2d35f4dad4b960c0562979d995))
+
+## [1.0.3](https://github.com/cunneen/vscode-plist/compare/v1.0.2...v1.0.3) (2025-04-10)
+
+
+### Bug Fixes
+
+* enable editing of binary files ([#6](https://github.com/cunneen/vscode-plist/issues/6)) ([@dnicolson](https://github.com/dnicolson)) ([1791ef2](https://github.com/cunneen/vscode-plist/commit/1791ef246bcee527080b86744927fb6fb0cafba3))
+
 ## [1.0.2](https://github.com/cunneen/vscode-plist/compare/v1.0.1...v1.0.2) (2025-04-10)
 
 
