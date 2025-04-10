@@ -179,7 +179,7 @@
   },
   "dependencies": {
     "@vscode/codicons": "^0.0.32",
-    "plist": "^3.1.0"
+    "plist": "github:TooTallNate/plist.js#pull/144/head"
   },
   "description": "Allows viewing and editing files in a plist editor (updated fork of ivhernandez.vscode-plist)",
   "devDependencies": {
@@ -264,5 +264,5 @@
     "watch-web": "npm run compile-web --watch",
     "watch-tests": "tsc -p . -w --outDir out"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
