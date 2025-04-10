@@ -264,5 +264,5 @@
     "watch-web": "npm run compile-web --watch",
     "watch-tests": "tsc -p . -w --outDir out"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
