@@ -1,3 +1,3 @@
-export function isLocalMacOS(): boolean {
+export function isMacOS(): boolean {
   return false;
 }
