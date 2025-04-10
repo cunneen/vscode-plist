@@ -3,7 +3,7 @@
 //
 // (added as part of PR #8 )
 
-//TODO: Remove file plist-js.extend.d.ts once TooTallNate/plist.js#144 is merged
+//TODO: #10 Remove file plist-js.extend.d.ts once @TooTallNate/plist.js#144 is merged
 
 import 'plist';
 interface CreateOptions {

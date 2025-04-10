@@ -4,7 +4,7 @@ import * as plist from 'plist';
 import {decodeBinaryPlist} from '../decoder/binary_plist_decoder';
 import {plutil} from '../../../common/utilities/node/plutil';
 import {BinaryPlistDocument} from '../binary_plist_document';
-// TODO: remove this import when TooTallNate/plist.js#144 is merged
+//TODO: #9 remove this import when TooTallNate/plist.js 144 is merged
 import {type CreateOptions} from './plist-js.extend';
 
 export async function generateTextualPlist(
