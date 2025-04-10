@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.2](https://github.com/cunneen/vscode-plist/compare/v1.0.1...v1.0.2) (2025-04-10)
+
+
+### Bug Fixes
+
+* :rotating_light: Add type declaration to remove linter warnings ([b0ea87e](https://github.com/cunneen/vscode-plist/commit/b0ea87e8aecfa1c85aa235fb519291fd382361d7)), closes [#8](https://github.com/cunneen/vscode-plist/issues/8)
+* invalid string characters ([#8](https://github.com/cunneen/vscode-plist/issues/8)) ([@dnicolson](https://github.com/dnicolson)) ([ea8c167](https://github.com/cunneen/vscode-plist/commit/ea8c167594bc65de48c429e9430672766e8f3af9))
+
+
+### Miscellaneous Chores
+
+* :bulb: add TODO comments linking to github issues ([be9471c](https://github.com/cunneen/vscode-plist/commit/be9471c84a443d52f8207b5c55812da4aeec4ade))
+* :wrench: .vscode/settings : GH extension: remove 'upstream' from issues ([2b6c90e](https://github.com/cunneen/vscode-plist/commit/2b6c90e41e4e05fb7edaf508362e994f9c8dfb48))
+
 ## [1.0.1](https://github.com/cunneen/vscode-plist/compare/v1.0.0...v1.0.1) (2025-04-09)
 
 
