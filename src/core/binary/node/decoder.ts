@@ -4,8 +4,8 @@ import * as plist from 'plist';
 import {decodeBinaryPlist} from '../decoder/binary_plist_decoder';
 import {plutil} from '../../../common/utilities/node/plutil';
 import {BinaryPlistDocument} from '../binary_plist_document';
-// eslint-disable-next-line node/no-extraneous-import
-import {CreateOptions} from 'xmlbuilder';
+// TODO: remove this import when TooTallNate/plist.js#144 is merged
+import {type CreateOptions} from './plist-js.extend';
 
 export async function generateTextualPlist(
   document: BinaryPlistDocument,
@@ -23,8 +23,6 @@ export async function generateTextualPlist(
     );
   } else {
     const content = await decodeBinaryPlist(document.uri);
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     const plistContent = plist.build(content as plist.PlistValue, {}, {
       invalidCharReplacement: '�',
     } as CreateOptions);
